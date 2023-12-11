@@ -1,3 +1,7 @@
 
-T
-java:S1128"7Remove this unused import 'de.tiere.PigTooFatListener'.(üá¬Ü8ïÍ„¾Å1
+Q
+java:S1172."4Remove this unused method parameter "dickesSchwein".(ìœº²8íæıÂÅ1
+L	java:S106/"+Replace this use of System.out by a logger.(¬±¶Öüÿÿÿÿ8ïööÂÅ1
+F	java:S1067"+Replace this use of System.out by a logger.(Œ§-8ğööÂÅ1
+S
+java:S1128"1Remove this unused import 'java.io.Serializable'.(èãîÂÿÿÿÿÿ8¾¬ÄÅ1

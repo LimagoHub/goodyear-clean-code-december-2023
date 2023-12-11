@@ -3,7 +3,8 @@ package de.limago;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Main extends Frame{
+
+public class Main extends Frame {
 
 
     public Main()  {
@@ -11,15 +12,13 @@ public class Main extends Frame{
 
         setSize(300, 300);
         Button button = new Button("Drück mich");
-
+        button.addActionListener(e->print());
         add(button);
 
 
     }
 
-    private void beenden() {
-        dispose();
-    }
+
 
 
 
@@ -28,6 +27,23 @@ public class Main extends Frame{
         new Main().setVisible(true);
     }
 
+    private void print() {
+        System.out.println("It works");
+    }
 
 
+//   class MyActionListener implements ActionListener{
+//
+//       @Override
+//       public void actionPerformed(final ActionEvent e) {
+//           print();
+//       }
+//   }
+
+    class MyWindowListener extends WindowAdapter {
+        @Override
+        public void windowClosing(final WindowEvent e) {
+            super.windowClosing(e);
+        }
+    }
 }

@@ -1,5 +1,5 @@
 
-M
-java:S1128"+Remove this unused import 'java.awt.event'.(Ã®ÎÙÿÿÿÿÿ8À°†¾Å1
-N
-java:S1144",Remove this unused private "beenden" method.(Ïüòûÿÿÿÿ8Á°†¾Å1
+L	java:S106"+Replace this use of System.out by a logger.(Å¯Ëßÿÿÿÿÿ8”½³ÂÅ1
+X	java:S125#"<This block of commented-out lines of code should be removed.(ÒĞ€ä8øò¶ÂÅ1
+J
+java:S1185-"(Remove this method to simply inherit it.(¶¶·ßÿÿÿÿÿ8§…İÄÅ1
