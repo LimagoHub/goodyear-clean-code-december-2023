@@ -1,96 +1,29 @@
 package de.goodyear.game.nim;
 
-import de.goodyear.game.Game;
 
-import java.util.Scanner;
+import de.goodyear.game.AbstractGame;
+import de.goodyear.io.Writer;
 
-public class NimGame implements Game {
+public class NimGame extends AbstractGame<Integer, Integer> {
 
-    private final Scanner scanner = new Scanner(System.in);
-    private int matches;
-    private int turn;
 
-    public NimGame() {
-        matches = 23;
-
-    }
-
-    @Override
-    public void play() {
-        while( ! isGameOver()) {
-            playSingleRound();
-        }
-    }
-
-    private void playSingleRound() {
-
-        humanTurn();
-        computerTurn();
-    }
-
-    private void humanTurn() {
-
-        if(isGameOver()) return;
-        executeHumanTurn();
-        terminateTurn( "Human");
-    }
-
-    private void executeHumanTurn() {
-        do {
-            concreteHumanTurn();
-        } while(thisTurnIsValid());
-    }
-
-    private boolean thisTurnIsValid() {
-        if(isTurnValid()) return false;
-        System.out.println("Invalid turn");
-        return true;
+    public NimGame(final Writer writer) {
+        super(writer);
+        setBoard(23);
     }
 
 
-    private void concreteHumanTurn() {
-        System.out.println(String.format("We have %s matches. Please take 1, 2 or 3.", matches));
-        turn = scanner.nextInt();
+
+
+    protected boolean isTurnValid() {
+        return getTurn() >= 1 && getTurn() <= 3;
     }
 
-    private void computerTurn() {
-
-
-        if(isGameOver()) return;
-
-        final int turns[] = {3,1,1,2};
-
-
-
-        turn = turns[matches % 4];
-        System.out.printf("Computer takes %s matches.\n", turn);
-
-        terminateTurn("Computer");
+    protected void updateBoard() {
+        setBoard(getBoard()-getTurn());
     }
 
-    // Integration
-    private void terminateTurn( final String player) {
-        updateBoard();
-        printGameoverMessageIfGameIsOver(player);
-    }
-
-
-    // Operation
-    private void printGameoverMessageIfGameIsOver(final String player) {
-        if(matches < 1) {
-            System.out.println(player + " loose");
-        }
-    }
-    // ---------------------- Implemention Swamp
-    private boolean isTurnValid() {
-        return turn >= 1 && turn <= 3;
-    }
-
-    private void updateBoard() {
-        matches -= turn;
-    }
-
-    private boolean  isGameOver() {
-        return matches < 1;
+    protected boolean  isGameOver() {
+        return getBoard() < 1 || getPlayers().isEmpty();
     }
 }

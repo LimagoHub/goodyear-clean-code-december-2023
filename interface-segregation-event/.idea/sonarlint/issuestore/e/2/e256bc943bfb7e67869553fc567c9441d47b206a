@@ -1,7 +1,9 @@
 
 Q
-java:S1172."4Remove this unused method parameter "dickesSchwein".(ìœº²8íæıÂÅ1
-L	java:S106/"+Replace this use of System.out by a logger.(¬±¶Öüÿÿÿÿ8ïööÂÅ1
-F	java:S1067"+Replace this use of System.out by a logger.(Œ§-8ğööÂÅ1
+java:S1172/"4Remove this unused method parameter "dickesSchwein".(ìœº²8°¥ãèÅ1
+L	java:S1060"+Replace this use of System.out by a logger.(¬±¶Öüÿÿÿÿ8±¥ãèÅ1
+F	java:S1068"+Replace this use of System.out by a logger.(Œ§-8±¥ãèÅ1
+R
+java:S1128"0Remove this unused import 'java.awt.print.Book'.(ÕÓÄßúÿÿÿÿ8±¥ãèÅ1
 S
-java:S1128"1Remove this unused import 'java.io.Serializable'.(èãîÂÿÿÿÿÿ8¾¬ÄÅ1
+java:S1128"1Remove this unused import 'java.io.Serializable'.(èãîÂÿÿÿÿÿ8²¥ãèÅ1
