@@ -11,7 +11,7 @@ public class IntArrayLoggerDecorator implements IntArrayFiller{
     }
 
     public void fillArray(final int[] data) {
-        System.out.println("Fillarray wa called...");
+        System.out.println("Fillarray was called...");
         arrayFiller.fillArray(data);
     }
 }

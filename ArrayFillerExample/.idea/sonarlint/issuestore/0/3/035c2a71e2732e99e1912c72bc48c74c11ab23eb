@@ -1,5 +1,5 @@
 
 G
 java:S1197	"*Move the array designators [] to the type.(ÛÌÈ8Ÿ„ö–Æ1
-L	java:S106"+Replace this use of System.out by a logger.(¥Ó¦©ÿÿÿÿÿ8¢„ö–Æ1
-L	java:S106"+Replace this use of System.out by a logger.(œíßşÿÿÿÿ8á¦ö–Æ1
+]	java:S125"<This block of commented-out lines of code should be removed.(¹Î¼‰øÿÿÿÿ8¦×ÓšÆ1
+]	java:S125"<This block of commented-out lines of code should be removed.(ĞÔªşÿÿÿÿ8¨ŸÔšÆ1

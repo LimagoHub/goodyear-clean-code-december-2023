@@ -1,8 +1,3 @@
 
-X	java:S125&"<This block of commented-out lines of code should be removed.(ØÿÔ¸8âÜ¹™Æ1
-X	java:S125("<This block of commented-out lines of code should be removed.(©Ê®ß8»Ñ¶™Æ1
-
-java:S1128"lRemove this unused import 'de.goodyear.demo.collection.internal.decorator.IntArrayFillerBenchmarkDecorator'.(à‰£•ıÿÿÿÿ8æÜ¹™Æ1
-q
-java:S1128
-"URemove this unused import 'de.goodyear.demo.generator.internal.GenericGeneratorImpl'.(ßµ&8æÜ¹™Æ1
+G	java:S1060"+Replace this use of System.out by a logger.(åô8óÉ›Æ1
+X	java:S125>"<This block of commented-out lines of code should be removed.(ØÿÔ¸8õÉ›Æ1

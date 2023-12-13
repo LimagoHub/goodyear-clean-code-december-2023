@@ -43,3 +43,7 @@ q
 Asrc/de/goodyear/demo/generator/internal/GenericGeneratorImpl.java,c\b\cb53574681ed13263600fffc0968154ad8b56d45
 |
 Lsrc/de/goodyear/demo/collection/internal/parallel/ArrayFillParallelImpl.java,a\5\a527493dee0563751e851ad0d8c55a54f83684aa
+g
+7src/de/goodyear/demo/generator/IntGeneratorBuilder.java,b\d\bd570cebaf9a04fe43ce271820a7d7b39a100122
+s
+Csrc/de/goodyear/demo/generator/internal/RandomGeneratorBuilder.java,c\1\c1d1668369ea06834df801323e2f818964c983c7

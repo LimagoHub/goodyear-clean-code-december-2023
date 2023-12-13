@@ -16,11 +16,11 @@ public class ArrayClientImpl implements ArrayClient {
 
     @Override
     public void go() {
-        System.out.println("Showing first 10 values of Array");
+        //System.out.println("Showing first 10 values of Array");
         arrayFiller.fillArray(field);
 
-        for (int i = 0; i < 10; i++) {
-            System.out.println(field[i]);
-        }
+//        for (int i = 0; i < 10; i++) {
+//            System.out.println(field[i]);
+//        }
     }
 }

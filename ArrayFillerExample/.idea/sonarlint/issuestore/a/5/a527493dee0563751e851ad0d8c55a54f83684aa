@@ -1,3 +1,11 @@
 
-_
-java:S2094"BRemove this empty class, write its code or make it an "interface".(Ö‹ğ‹8Øú¿™Æ1
+G
+java:S1197"*Move the array designators [] to the type.(˜éí£8Ã•û™Æ1
+{
+java:S2142""^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8ŸÊ„šÆ1
+T
+java:S11357"2Complete the task associated to this TODO comment.(±‹ú¥øÿÿÿÿ8ĞÄÖœÆ1
+z
+java:S1128"]Remove this unused import 'de.goodyear.demo.collection.internal.sequentiell.ArrayFillerImpl'.(Ûã‘¢8±•ÀœÆ1
+c
+java:S1128"ARemove this unused import 'de.goodyear.demo.generator.Generator'.(¬‹º•üÿÿÿÿ8±•ÀœÆ1
