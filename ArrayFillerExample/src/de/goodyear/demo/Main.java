@@ -4,8 +4,10 @@ import de.goodyear.demo.client.ArrayClient;
 import de.goodyear.demo.client.internal.ArrayClientImpl;
 import de.goodyear.demo.collection.IntArrayFiller;
 import de.goodyear.demo.collection.internal.decorator.IntArrayFillerBenchmarkDecorator;
+import de.goodyear.demo.collection.internal.decorator.IntArrayLoggerDecorator;
 import de.goodyear.demo.collection.internal.sequentiell.ArrayFillerImpl;
 import de.goodyear.demo.generator.IntGenerator;
+import de.goodyear.demo.generator.internal.GenericGeneratorImpl;
 import de.goodyear.demo.generator.internal.RandomNumberGeneratorImpl;
 import de.goodyear.demo.time.internal.BenchmarkProxy;
 
@@ -33,8 +35,10 @@ public class Main {
 
 
         IntGenerator generator = new RandomNumberGeneratorImpl();
+        //IntGenerator generator = new GenericGeneratorImpl(1,x->x+2);
         IntArrayFiller arrayFiller = new ArrayFillerImpl(generator);
         //arrayFiller = new IntArrayFillerBenchmarkDecorator(arrayFiller);
+        arrayFiller = new IntArrayLoggerDecorator(arrayFiller);
         arrayFiller = (IntArrayFiller) BenchmarkProxy.newInstance(arrayFiller);
         ArrayClient client = new ArrayClientImpl(arrayFiller);
         client.go();

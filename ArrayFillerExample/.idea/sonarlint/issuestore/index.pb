@@ -37,3 +37,9 @@ e
 Osrc/de/goodyear/demo/collection/internal/decorator/IntArrayFillerDecorator.java,0\9\095bce83e7d0f458b34052e6e7d48b93c0b1979a
 ˆ
 Xsrc/de/goodyear/demo/collection/internal/decorator/IntArrayFillerBenchmarkDecorator.java,8\e\8e899871361f5bf0ce4145c5d174ddf7318140fa
+
+Osrc/de/goodyear/demo/collection/internal/decorator/IntArrayLoggerDecorator.java,c\b\cb0aebbf4c3166ec905ac33cdbe3f202cadc9ca3
+q
+Asrc/de/goodyear/demo/generator/internal/GenericGeneratorImpl.java,c\b\cb53574681ed13263600fffc0968154ad8b56d45
+|
+Lsrc/de/goodyear/demo/collection/internal/parallel/ArrayFillParallelImpl.java,a\5\a527493dee0563751e851ad0d8c55a54f83684aa
