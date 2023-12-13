@@ -4,7 +4,7 @@ import de.goodyear.game.player.AbstractPlayer;
 
 public abstract class AbstractNimGamePlayer extends AbstractPlayer<Integer,Integer> {
 
-    public AbstractNimGamePlayer() {
+    protected AbstractNimGamePlayer() {
     }
 
     public AbstractNimGamePlayer(final String name) {

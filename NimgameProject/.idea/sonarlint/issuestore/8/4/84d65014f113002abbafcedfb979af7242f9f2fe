@@ -1,0 +1,11 @@
+
+ë
+java:S1598"ÍThis file "GameWithPlayer.java" should be located in "de\goodyear\game" directory, not in "C:\Users\JoachimWagner\git\goodyear\goodyear-clean-code-december-2023\NimgameProject\src\de\goodyear\game\player".(ªô®8Ò¯ÃíÅ1
+@
+java:S2326"#BOARD is not used in the interface.(ûÔƒ®8òÌÂíÅ1
+?
+java:S2326""TURN is not used in the interface.(ûÔƒ®8òÌÂíÅ1
+e	java:S119"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(ûÔƒ®8óÌÂíÅ1
+e	java:S119"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(ûÔƒ®8óÌÂíÅ1
+v
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(µ‡ºóûÿÿÿÿ8Õ¯ÃíÅ1

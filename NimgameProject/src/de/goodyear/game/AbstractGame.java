@@ -16,7 +16,7 @@ public abstract class AbstractGame<BOARD,TURN> implements Game{
 
     private final Writer writer;
 
-    public AbstractGame(final Writer writer) {
+    protected AbstractGame(final Writer writer) {
         this.writer = writer;
     }
 
@@ -54,10 +54,15 @@ public abstract class AbstractGame<BOARD,TURN> implements Game{
     }
     public void removePlayer(Player<BOARD,TURN> player) {
         players.remove(player);
+
+
     }
 
+    /**
+     *
+     */
     @Override
-    public final void play() {
+    public final void play() {  // Most abstract
         while( ! isGameOver()) {
             playSingleRound();
         }
@@ -73,15 +78,20 @@ public abstract class AbstractGame<BOARD,TURN> implements Game{
 
     private void playSingleMove() {
 
-        if(isGameOver()) return;
+        if(initTurn()) return;
         executeMoveAndRepeatUntilValid();
         terminateTurn( );
+    }
+
+    private boolean initTurn() {
+        prepare();
+        return isGameOver();
     }
 
     private void executeMoveAndRepeatUntilValid() {
         do {
             turn = getCurrentPlayer().doTurn(board);
-        } while(thisTurnIsValid());
+        } while(thisTurnIsInvalid());
 
     }
 
@@ -90,7 +100,7 @@ public abstract class AbstractGame<BOARD,TURN> implements Game{
         printGameoverMessageIfGameIsOver();
     }
 
-    private boolean thisTurnIsValid() {
+    private boolean thisTurnIsInvalid() {
         if(isTurnValid()) return false;
         write("Invalid turn");
         return true;
@@ -106,7 +116,10 @@ public abstract class AbstractGame<BOARD,TURN> implements Game{
 
     // -----------------------------
 
-    abstract protected boolean  isGameOver();
+    protected void prepare() {
+        // OK
+    }
+    protected abstract  boolean  isGameOver();
 
     abstract protected boolean isTurnValid() ;
 

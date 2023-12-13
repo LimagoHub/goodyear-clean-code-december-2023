@@ -37,3 +37,24 @@ _
 /src/de/goodyear/game/player/AbstractPlayer.java,4\9\49a1cf862110f179a19af91e7993f2ecef24e001
 V
 &src/de/goodyear/game/AbstractGame.java,8\7\8737aabfdb069d1cad63f3cd7221d7ac88563ce9
+b
+2src/de/goodyear/game/nim/player/GrandmaPlayer.java,a\b\abc87486517f95a59e68c78218ca3f368f1aa6c4
+N
+src/de/goodyear/game/Game.java,f\1\f111d2526e5b3ec33ffc763b6233fc001ab9d315
+_
+/src/de/goodyear/game/player/GameWithPlayer.java,8\4\84d65014f113002abbafcedfb979af7242f9f2fe
+X
+(src/de/goodyear/game/GameWithPlayer.java,b\2\b255d37b23e376926a41ead7c21c9f1751f25ca6
+M
+src/de/goodyear/xyz/Math.java,9\b\9b21d987e5d9db006fe33e57f8d7860a4a96ab8b
+W
+'src/de/goodyear/application/Person.java,3\5\3536a57ca4162b499fcadc9e3334795b13765532
+O
+src/de/goodyear/Calculator.java,e\f\efcd42499c271dc3ebdfe611765f2d1712d96faf
+S
+#src/de/goodyear/CalculatorImpl.java,3\8\38ba4c0d3527355c819eec9f86961e581a6c6bee
+U
+%src/de/goodyear/CalculatorLogger.java,d\7\d738151cd7cd8fc534be44522d8bcba33488d5dc
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
