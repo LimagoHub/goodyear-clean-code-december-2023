@@ -1,11 +1,4 @@
 
-d
-java:S1854 "GRemove this useless assignment to local variable "availableProcessors".(½Æèê8—½ö•Æ1
-U
-java:S1481 "8Remove this unused "availableProcessors" local variable.(½Æèê8š½ö•Æ1
-Q
-java:S1128"/Remove this unused import 'java.time.Duration'.(ëá¯‰üÿÿÿÿ8š½ö•Æ1
-P
-java:S1128".Remove this unused import 'java.time.Instant'.(Â‚éñÿÿÿÿÿ8š½ö•Æ1
-O
-java:S1128"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ8›½ö•Æ1
+X	java:S125%"<This block of commented-out lines of code should be removed.(©Ê®ß8•Ï¬—Æ1
+Ž
+java:S1128"lRemove this unused import 'de.goodyear.demo.collection.internal.decorator.IntArrayFillerBenchmarkDecorator'.(à‰£•ýÿÿÿÿ8–Ï¬—Æ1

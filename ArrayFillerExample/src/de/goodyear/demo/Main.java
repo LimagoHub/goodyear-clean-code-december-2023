@@ -1,8 +1,13 @@
 package de.goodyear.demo;
 
-import java.time.Duration;
-import java.time.Instant;
-import java.util.Random;
+import de.goodyear.demo.client.ArrayClient;
+import de.goodyear.demo.client.internal.ArrayClientImpl;
+import de.goodyear.demo.collection.IntArrayFiller;
+import de.goodyear.demo.collection.internal.decorator.IntArrayFillerBenchmarkDecorator;
+import de.goodyear.demo.collection.internal.sequentiell.ArrayFillerImpl;
+import de.goodyear.demo.generator.IntGenerator;
+import de.goodyear.demo.generator.internal.RandomNumberGeneratorImpl;
+import de.goodyear.demo.time.internal.BenchmarkProxy;
 
 public class Main {
 
@@ -27,10 +32,12 @@ public class Main {
     private void run() {
 
 
-
-        // 1 to availableProcessors + 1
-        final var availableProcessors = Runtime.getRuntime().availableProcessors();
-
+        IntGenerator generator = new RandomNumberGeneratorImpl();
+        IntArrayFiller arrayFiller = new ArrayFillerImpl(generator);
+        //arrayFiller = new IntArrayFillerBenchmarkDecorator(arrayFiller);
+        arrayFiller = (IntArrayFiller) BenchmarkProxy.newInstance(arrayFiller);
+        ArrayClient client = new ArrayClientImpl(arrayFiller);
+        client.go();
 
     }
 }

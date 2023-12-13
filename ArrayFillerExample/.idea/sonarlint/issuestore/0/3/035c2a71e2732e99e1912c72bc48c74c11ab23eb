@@ -1,6 +1,5 @@
 
 G
-java:S1197"*Move the array designators [] to the type.(ÛÌÈ8â»“Æ1
-G	java:S106"+Replace this use of System.out by a logger.(ÔĞÄä8şº»“Æ1
-F
-java:S1068")Remove this unused "field" private field.(ÛÌÈ8’â»“Æ1
+java:S1197	"*Move the array designators [] to the type.(ÛÌÈ8Ÿ„ö–Æ1
+L	java:S106"+Replace this use of System.out by a logger.(¥Ó¦©ÿÿÿÿÿ8¢„ö–Æ1
+L	java:S106"+Replace this use of System.out by a logger.(œíßşÿÿÿÿ8á¦ö–Æ1
