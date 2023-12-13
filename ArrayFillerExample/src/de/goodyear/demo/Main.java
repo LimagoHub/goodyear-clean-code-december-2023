@@ -16,7 +16,7 @@ public class Main {
     Please solve the task following the Contract First principle, meaning define the interfaces first.
      */
 
-    private int field[] = new int[Integer.MAX_VALUE / 2];
+
 
 
 
@@ -30,16 +30,6 @@ public class Main {
 
         // 1 to availableProcessors + 1
         final var availableProcessors = Runtime.getRuntime().availableProcessors();
-        System.out.println(availableProcessors);
-
-        final Random random = new Random();
-        var start = Instant.now();
-        for (int i = 0; i < field.length; i++) {
-            field[i] = random.nextInt();
-        }
-        var end = Instant.now();
-        var duration = Duration.between(start, end);
-        System.out.printf("Duration is %s millis\n", duration.toMillis());
 
 
     }

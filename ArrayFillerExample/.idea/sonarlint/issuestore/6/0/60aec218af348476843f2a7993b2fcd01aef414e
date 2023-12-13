@@ -1,9 +1,11 @@
 
-G
-java:S1197"*Move the array designators [] to the type.(ÛÌÈ8áœ‘Æ1
-L	java:S106!"+Replace this use of System.out by a logger.(¸§À¦úÿÿÿÿ8åœ‘Æ1
-;
-java:S2119#"Save and re-use this "Random".(¦‘—ê8çœ‘Æ1
-m
-java:S3457*"Q%n should be used in place of \n to produce the platform-specific line separator.(±«±8éœ‘Æ1
-F	java:S106*"+Replace this use of System.out by a logger.(±«±8éœ‘Æ1
+d
+java:S1854 "GRemove this useless assignment to local variable "availableProcessors".(½Æèê8—½ö•Æ1
+U
+java:S1481 "8Remove this unused "availableProcessors" local variable.(½Æèê8š½ö•Æ1
+Q
+java:S1128"/Remove this unused import 'java.time.Duration'.(ëá¯‰üÿÿÿÿ8š½ö•Æ1
+P
+java:S1128".Remove this unused import 'java.time.Instant'.(Â‚éñÿÿÿÿÿ8š½ö•Æ1
+O
+java:S1128"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ8›½ö•Æ1
